@@ -1,0 +1,11 @@
+#Nav{
+    text-decoration: none;
+    color: #f0f8ff;
+  }
+  #Nav:hover{
+    color:lightblue
+  }
+  #navIcon{
+    width:30px;
+    color:aliceblue
+  }

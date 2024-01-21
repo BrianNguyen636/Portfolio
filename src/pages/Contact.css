@@ -1,0 +1,39 @@
+
+#formCard{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 20px;
+
+}
+@keyframes formCard {
+    from{opacity: 0; right:50px}
+    to{opacity: 1;right:0px}
+}
+form {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#contactMain{
+    position: relative;
+    animation-name: formCard;
+    animation-duration: 0.5s;
+}
+/* #contactMain{
+    margin-top: 5%;
+    position: relative;
+    animation-name: formCard;
+    animation-duration: 0.5s;
+    flex-direction: row;
+    display: flex;
+}
+
+#imageCard{
+    padding: 20px;
+    width: 40%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#contactText{
+    font-size: 20px;
+} */

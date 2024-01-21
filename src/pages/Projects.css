@@ -1,0 +1,33 @@
+#projectMain{
+    margin: 40px;
+}
+#projectText{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 20%;
+    float:left;
+    position: fixed;
+    animation-name: text;
+    animation-duration: 1s;
+}
+#projectList{
+    display: flex;
+    flex-direction: column;
+    animation-name: list;
+    animation-duration: 1s;
+    position: relative;
+    float: right;
+    width: 60%;
+    margin-left: 40px;
+}
+@keyframes text {
+    from {opacity: 0;}
+    to {opacity: 1; }
+}
+@keyframes list {
+    from {opacity: 0; top:50px}
+    to {opacity: 1; top:0px}
+}
+p {
+    padding:10px;
+}

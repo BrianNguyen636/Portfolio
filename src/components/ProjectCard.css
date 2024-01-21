@@ -1,0 +1,14 @@
+#projectCard{
+  margin-bottom : 20px;
+  opacity: .5;
+  text-decoration: none;
+}
+#projectCard:hover{
+  opacity: 1;
+}
+#projectThumb{
+  width: 50%;
+  float: left;
+  padding-right: 20px;
+}
+  

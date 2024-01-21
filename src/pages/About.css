@@ -1,0 +1,32 @@
+@keyframes aboutText {
+    0%{opacity: 0; right:100px}
+    30%{opacity: 0; right:100px}
+    100%{opacity: 1; right:0px}
+  }
+  #aboutMain{
+    margin-top: 2%;
+    margin-left: 20%;
+    align-content: center;
+  
+  }
+  #aboutCard{
+    font-size: large;
+    word-spacing: 0.5ch;
+    animation-name: aboutText;
+    animation-duration: 2s;
+    width: 500px;
+  }
+  @keyframes aboutPic {
+    from{opacity: 0;}
+    to{opacity: 1;}
+  }
+  #aboutPortrait{
+    animation-name: aboutPic;
+    animation-duration: 1s;
+    width:40%;
+    height: fit-content;
+    margin-bottom: 20px;
+  }
+  #aboutBody{
+    padding-left: 20px;
+  }
