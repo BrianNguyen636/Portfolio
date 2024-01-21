@@ -1,2 +1,1 @@
-### My Portfolio Website
-Please see the link to the top right
+#My Portfolio site ([View here!](https://briannguyen636.github.io/Portfolio/))
