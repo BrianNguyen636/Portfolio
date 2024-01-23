@@ -21,7 +21,7 @@ export default function Home() {
                     <h2 className="text-primary" style={{textIndent:"30px"}}>   Software Engineer </h2>
                     <h3 style={{wordSpacing:"3px"}}>I'm a Front and Back-end Developer with experience working with Web APIs, Databases, and Cloud Services.</h3>
                     <br/>
-                    <a className="btn btn-primary" href="/contact">Contact Me</a>
+                    <a className="btn btn-primary" href="/Portfolio/contact">Contact Me</a>
                 </div>
             </div>
         </div>

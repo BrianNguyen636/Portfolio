@@ -34,7 +34,10 @@ export default function Contact() {
                         <textarea class="form-control" id="textInput" rows="4" required name="Message"/>
                         <br/>
                         <button className="btn btn-primary" id="submitButton" type="submit">Send</button>
+                        <br/><br/>
+                        <div>Or email me at <b className="text-info">briannguyen636@gmail.com</b></div>
                     </form>
+
                 </div>
 
 
