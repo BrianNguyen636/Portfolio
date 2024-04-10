@@ -21,9 +21,9 @@ export default function About() {
                         <p>
                             I'm a fresh graduate with a Bachelors degree in Computer Science. 
                             <br/>
-                            I am passionate about both front-end and back-end development, and I like to develop games with my free-time.
+                            I am passionate about both front-end and back-end development, as well as a strong sense of community and teamwork.
                             <br/>
-                            Actively seeking an <b className="text-info">internship / entry-level position</b>, and I am willing to relocate anywhere in the U.S.
+                            Aside from Computer Science, I love to draw art, and play fighting games, as shown to the left.
                         </p>
                     </div>
                     <br/>

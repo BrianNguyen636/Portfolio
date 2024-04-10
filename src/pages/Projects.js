@@ -20,13 +20,7 @@ export default function Projects() {
                     {ProjectList.map((proj) => {
                         return (
                             <div key={proj.title}>
-                                <ProjectCard 
-                                    title = {proj.title} 
-                                    tags = {proj.tags} 
-                                    body = {proj.body} 
-                                    image = {proj.image}
-                                    link = {proj.link}
-                                />
+                                <ProjectCard {...proj}/>
                             </div>
                         )
                     })}

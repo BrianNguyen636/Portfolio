@@ -13,7 +13,9 @@ export default function ProjectCard(Project) {
                     <br/>
                     <br/>
                     <div style={{fontSize:"16px"}}>
-                        {Project.body}
+                        {Project.body.map((e) => {
+                            return (<li>{e}</li>);
+                        })}
                     </div>
                 </p>
             </div>

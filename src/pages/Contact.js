@@ -1,8 +1,24 @@
-import React from "react";
+import {React, useRef} from "react";
 import NavBar from '../components/NavBar'
 import './Contact.css'
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
+    const form = useRef();
+    const sendEmail = e => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            'service_2ph5v4c','template_6a24qv2', form.current, {
+                publicKey: '1Pp4U1ZKVFQ7z7HT5',
+            }
+        )
+        .then(() => {
+            alert('Email successfully sent!');
+        }, (error) => {
+            alert('Email failed...' , error.text);
+        });
+    }
     return (
         <div>
             <NavBar/>
@@ -12,26 +28,27 @@ export default function Contact() {
                 <br></br>
                 <div className = "card" id="formCard">
                     <h3 className="card-header">Contact Me</h3>
-                    <form action="https://formsubmit.co/0dcfea91625437078565348294267901" method="POST">
+                    {/* <form action="https://formsubmit.co/0dcfea91625437078565348294267901" method="POST"> */}
+                    <form ref = {form} onSubmit={sendEmail}>
                         <div style={{display:"flex", flexDirection:"row",flexWrap:"wrap"}}>
                             <div style={{marginRight:30}}>
                                 <label for="nameInput" class="form-label mt-4">Name:</label>
-                                <input type="text" class="form-control" id="nameInput" placeholder="Enter your name" required name="Name"/>
+                                <input type="text" class="form-control" id="nameInput" placeholder="Enter your name" required name="from_name"/>
                             </div>
                             <div>
                                 <label for="emailInput" class="form-label mt-4">Email address:</label>
-                                <input type="email" class="form-control" id="emailInput" placeholder="Enter your email" required name="Email"/>
+                                <input type="email" class="form-control" id="emailInput" placeholder="Enter your email" required name="from_email"/>
                             </div>
 
                         </div>
                         <br/>
-                        <div>
+                        {/* <div>
                             <label for="subjectInput" class="form-label mt-4">Subject:</label>
                             <input type="text" class="form-control" id="subjectInput" required name="Subject"/>
-                        </div>
+                        </div> */}
                         <br/>
                         Message:
-                        <textarea class="form-control" id="textInput" rows="4" required name="Message"/>
+                        <textarea class="form-control" id="textInput" rows="4" required name="message"/>
                         <br/>
                         <button className="btn btn-primary" id="submitButton" type="submit">Send</button>
                         <br/><br/>
@@ -46,32 +63,3 @@ export default function Contact() {
     );
 }
 
-// import React from "react";
-// import NavBar from '../components/NavBar'
-// import './Contact.css'
-
-// export default function Contact() {
-//     return (
-//         <div>
-//             <NavBar/>
-//             <div id="contactMain">
-//                 <br/><br/>
-
-//                 <div className="card" id="imageCard">
-//                     <img src = './gundam.jpg'
-//                     alt="The life-sized gundam"
-//                     id="contactImage"
-//                     title="The life-sized Gundam Unicorn"
-//                     />
-//                 </div>
-
-//                 <div id="contactText">
-//                     <h1>Contact Me</h1>
-//                     <br/>
-                    
-//                 </div>
-                
-//             </div>
-//         </div>
-//     );
-// }
