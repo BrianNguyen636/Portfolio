@@ -13,6 +13,18 @@ export const PROJECTS = [
         ]
     },
     {
+        title: 'Company Management Board',
+        tags: "Angular, Typescript, HTML, CSS, Java, Spring, Github",
+        image:"./company.png",
+        link:"https://github.com/BrianNguyen636/CompanyManagement",
+        body:[
+            'Created a webpage application designed to allow users to manage company activities such as announcements, teams, projects and users.',
+            'Generated all information shown in the web page dynamically using information given from the database connection.',
+            'Utilized popup dialogs with form validation in order to gather information from the user to create and store new information on the database.',
+            'Implemented admin and worker views for separate functionality based on the position of the user.'
+        ]
+    },
+    {
         title: "Dashers App",
         tags: "React, Express, REST, SQL, Javascript, Github",
         image:"./Dashers.png",

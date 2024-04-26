@@ -30,8 +30,8 @@ export default function About() {
                     <h3 className = "card-header">Skills</h3>
                         <ul className="list">
                             <li>Python, Java</li>
-                            <li>HTML, CSS, Javascript</li>
-                            <li>React, Express, REST</li>
+                            <li>HTML, CSS, Javascript, Typescript</li>
+                            <li>React, Express, REST, Angular, Spring</li>
                             <li>SQL, AWS</li>
                             <li>English, Vietnamese, Japanese</li>
                         </ul>
