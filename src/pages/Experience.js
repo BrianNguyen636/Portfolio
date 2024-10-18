@@ -13,6 +13,14 @@ export default function Experience() {
                 <hr></hr>
                 <div id="list">
                     <ExperienceCard 
+                    title = "Full-Stack Developer Trainee"
+                    time = "March 2024 - April 2024"
+                    logo = "./cook.svg"
+                    company = "Cook Systems"
+                    roles = {["Developed web applications in groups of up to 6 developers utilizing Spring and Angular.",
+                    "Managed development teams and organized meetings in order to reach fast-paced deadlines."]}
+                    />
+                    <ExperienceCard 
                     title = "Computer Science Mentor"
                     time = "Jan 2023 - March 2023"
                     logo = "./UW.png"

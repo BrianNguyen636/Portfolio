@@ -19,7 +19,7 @@ export default function About() {
                     <h3 className="card-header">About Me</h3>
                     <div id="aboutBody">
                         <p>
-                            I'm a fresh graduate with a Bachelors degree in Computer Science. 
+                            I'm a Computer Science student currently pursuing a Master's Degree. 
                             <br/>
                             I am passionate about both front-end and back-end development, as well as a strong sense of community and teamwork.
                             <br/>

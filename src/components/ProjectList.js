@@ -39,6 +39,19 @@ export const PROJECTS = [
         ]
     },
     {
+        title: "Whos Who",
+        tags: "Angular, Typescript, HTML, CSS, Github",
+        image:"./WhosWho.png",
+        link: "https://github.com/BrianNguyen636/WhosWho",
+        // body: "Created a functional web application similar to online food delivery services in a 3 person group. "+
+        // "I handled the entire back-end REST api, which relayed data to and from the SQL database."
+        body:[
+            'Programmed a music-guessing game utilizing Spotify’s API routes in a 2-person team',
+            'Implemented in-browser music play with Howler.js with auto-play, volume adjustment, and pause/play functionality',
+            'Utilized browser local storage to save user scores in between sessions',
+        ]
+    },
+    {
         title: "TLQ Data Pipeline",
         tags: "AWS, SQL, Python, Java",
         image:"./TLQ.png",
